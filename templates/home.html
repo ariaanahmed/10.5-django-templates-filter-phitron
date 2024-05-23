@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body style="background-color: #24292E; color: #fff;">
+    <h5>Globally Home</h5>
+    <ul>
+        <li><a style="color:white;" href="/">Home</a></li>
+        <li><a style="color:white;" href="/filter_app/about/">About</a></li>
+        <li><a style="color:white;" href="/filter_app/contact/">Contact</a></li>
+        <li><a style="color:white;" href="/filter_app/methods/">Filter methods</a></li>
+    </ul>
+
+    <div class="filter-container">
+        <h3>Author: {{author}} - Age: {{age}}</h3>
+        <h3>Char Length: {{char_length | length}}</h3>
+        <h3>Add val: {{add_val | add:"5"}}</h3>
+        <h3>Add slash: {{add_slash | addslashes}}</h3>
+        <h3>Capitalize first letter: {{capitalize_first_letter | capfirst}}</h3>
+        <h3>Center with width: {{center_with_width | center:"15"}}</h3>
+        <h3>Cut Space in Str: {{cut_the_space | cut:" "}}</h3>
+        <h3>Show the Date: {{dateObj | date:"D d M Y"}}</h3>
+        <h3>default value: {{val_will_nothing | default:"nothing okay!"}}</h3>
+        <h3>dictsort sorting: {{dict_sort_val | dictsort:"name"}}</h3>
+        <h3>Is it divisible by argu: {{isItDivisibleByArgu | divisibleby:"17"}}</h3>
+        <h3>file size: {{file_size_format | filesizeformat }}</h3>
+        <h3>list first item: {{return_first_item | first }}</h3>
+        <h3>join list with string: {{join_list_str | join:"-" }}</h3>
+        <h3>list last item: {{return_last_item | last }}</h3>
+        <h3>line number: {{line_number | linenumbers }}</h3>
+        <h3>lower case: {{lower_case | lower }}</h3>
+        <h3>making list str: {{making_list_str | make_list }}</h3>
+        <h3>making list int: {{making_list_int | make_list }}</h3>
+        <h3>random val: {{random_val | random }}</h3>
+        <h3>slice of list: {{slice_list | slice:":2" }}</h3>
+        <h3>slugigy text: {{slugigy_text | slugify }}</h3>
+        <h3>time: {{time_fomat | time:"H:i" }}</h3>
+        {% comment %} <h3>blog_date: {{blog_date | timesince: }}</h3> {% endcomment %}
+        <h3>title case: {{title_case | title }}</h3>
+        <h3>unordered list: {{unordered_list_mthd | unordered_list }}</h3>
+        <h3>upper case: {{upper_case | upper }}</h3>
+        <h3>word count: {{words_count | wordcount }}</h3>
+    </div>
+</body>
+</html>
