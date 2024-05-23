@@ -43,7 +43,15 @@
         <h3>unordered list: {{unordered_list_mthd | unordered_list }}</h3>
         <h3>upper case: {{upper_case | upper }}</h3>
         <h3>word count: {{words_count | wordcount }}</h3>
-        {% comment %} gfg completed {% endcomment %}
+        {% comment %} geeks for geeks blog task completed {% endcomment %}
+        
+        <h3>Short date format: {{short_date_format | date:"SHORT_DATE_FORMAT"}}</h3>
+        <h3>m/d/y: {{full_date | date}}</h3>
+        <h3>truncate chars: {{truncate_chars | truncatechars:16}}</h3>
+        <h3>truncate words: {{truncate_words | truncatewords:6}}</h3>
+        {% comment %} <h3>Striptags: {{ strip_tags | striptags}}</h3> {% endcomment %}
+        {% comment %} <h3>pluralize: {{ pluralize_text | pluralize:"es" }}</h3> {% endcomment %}
+
     </div>
 </body>
 </html>

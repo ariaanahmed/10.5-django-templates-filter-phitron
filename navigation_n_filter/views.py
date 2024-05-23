@@ -35,6 +35,12 @@ def home(request):
         'title_case': "this is going to be the title case",
         'unordered_list_mthd': ['States', ['Kansas', ['Lawrence', 'Topeka'], 'Illinois']],
         'upper_case': "this is going to be the upper case",
-        'words_count': "this is going to count the word available in the str"
+        'words_count': "this is going to count the word available in the str",
+        'short_date_format': datetime.datetime.now(),
+        'full_date': datetime.datetime.now(),
+        'truncate_chars': 'This text is going to be truncate by the truncatechars option.',
+        'truncate_words': 'Truncate word is very help full to web while you are developing something.',
+        # 'strip_tags': 'Truncate word is very helpful',
+        # 'pluralize_text': "3 tomoto",
     }
     return render(request, 'home.html', allMethods)
